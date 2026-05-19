@@ -1,30 +1,52 @@
-# output.txt — Evidencia Docker
-# Generado después de ejecutar: bash build.sh
-#
-# Reemplaza este archivo con la salida real de tu terminal.
-# Debe contener:
-#   1. La salida de: docker ps -a   (contenedor con estado "Exited (0)")
-#   2. La salida de: docker logs samplerunning  (datos reales de la API)
-#
-# ─────────────────────────────────────────────────────────
-# EJEMPLO de cómo se verá (reemplazar con salida real):
-# ─────────────────────────────────────────────────────────
-#
-# CONTAINER ID   IMAGE           COMMAND           STATUS
-# a1b2c3d4e5f6   lrclib-letras   "python app.py"   Exited (0) 5 seconds ago
-#
-# ═══════════════════════════════════════════
-#   LRCLIB — Consulta de Letras Urbanas
-# ═══════════════════════════════════════════
-#   Buscando : Titi Me Pregunto
-#   Artista  : Bad Bunny
-#
-# ┌────────────────────────────────────────────────────┐
-# │  [1] Canción  : Titi Me Pregunto                   │
-# │  [2] Artista  : Bad Bunny                          │
-# │  [3] Álbum    : Un Verano Sin Ti                   │
-# │  [4] Duración : 4m 05s                             │
-# │  [5] LETRA (primeras 20 líneas):                   │
-# │  ...                                               │
-# └────────────────────────────────────────────────────┘
-# [OK] Consulta completada exitosamente.
+
+=======================================================
+  LRCLIB — Consulta de Letras Urbanas
+=======================================================
+  Buscando : Titi Me Pregunto
+  Artista  : Bad Bunny
+  Endpoint : https://lrclib.net/api/search
+=======================================================
+
+┌─────────────────────────────────────────────────────┐
+│           DATOS OBTENIDOS DE LA API                 │
+├─────────────────────────────────────────────────────┤
+│  [1] Canción  : Tití Me Preguntó                     │
+│  [2] Artista  : Bad Bunny                            │
+│  [3] Álbum    : Bad Bunny                            │
+│  [4] Duración : 4m 50s                                  │
+├─────────────────────────────────────────────────────┤
+│  [5] LETRA (primeras 20 líneas):                    │
+│                                                     │
+│  Ey, Tití me preguntó si tengo mucha' novia'         │
+│  Mucha' novia'                                       │
+│  Hoy tengo a una, mañana otra, ey                    │
+│  Pero no hay boda                                    │
+│  Tití me preguntó si tengo mucha' novia'             │
+│  Mucha' novia'                                       │
+│  Hoy tengo a una, mañana otra                        │
+│  Me las vo'a llevar a toa', pa un VIP, un VIP        │
+│  Ey, saluden a Tití                                  │
+│  Vamo' a tirarno' un selfi, say "cheese", ey         │
+│  Que sonrían las que ya les metí                     │
+│  En un VIP, un VIP, ey, saluden a Tití               │
+│  Vamo' a tirarno' un selfi, say "cheese"             │
+│  Que sonrían las que ya se olvidaron de mí           │
+│  Me gustan mucho las Gabriela', las Patricia'        │
+│  Las Nicole', las Sofía'                             │
+│  Mi primera novia en kínder, María                   │
+│  Y mi primer amor se llamaba Thalía                  │
+│  Tengo una colombiana que me escribe to' los día'    │
+│  Y una mexicana que ni yo sabía                      │
+└─────────────────────────────────────────────────────┘
+
+[OK] Consulta completada exitosamente.
+
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                          PORTS               NAMES
+036f6d9c2a78        lrclib-letras       "python app.py"          About a minute ago   Exited (0) About a minute ago                       samplerunning
+596d820e9ddc        056fe013c94a        "/bin/sh -c 'pip ins…"   3 minutes ago        Exited (2) 3 minutes ago                            infallible_joliot
+b3d6485189d2        056fe013c94a        "/bin/sh -c 'pip ins…"   6 minutes ago        Exited (2) 6 minutes ago                            confident_albattani
+c17bbe3b23f3        056fe013c94a        "/bin/sh -c 'pip ins…"   10 minutes ago       Exited (2) 10 minutes ago                           frosty_lewin
+ff8c2a83b684        3485c9c01d0d        "/bin/sh -c 'pip ins…"   13 minutes ago       Exited (2) 12 minutes ago                           festive_williams
+30378c99530a        3485c9c01d0d        "/bin/sh -c 'pip ins…"   14 minutes ago       Exited (1) 14 minutes ago                           reverent_bhaskara
+c4c7bd77c2dd        3485c9c01d0d        "/bin/sh -c 'pip ins…"   17 minutes ago       Exited (2) 17 minutes ago                           wonderful_williams
+f9ed728abcf7        88b2ad23255f        "/bin/sh -c 'pip ins…"   20 minutes ago       Exited (2) 20 minutes ago                           elastic_zhukovsky
